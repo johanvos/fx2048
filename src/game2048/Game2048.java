@@ -7,6 +7,7 @@ import javafx.scene.Scene;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.StackPane;
+import javafx.stage.Screen;
 import javafx.stage.Stage;
 
 /**
@@ -40,6 +41,9 @@ public class Game2048 extends Application {
         primaryStage.setScene(scene);
         primaryStage.setMinWidth(gameBounds.getWidth());
         primaryStage.setMinHeight(gameBounds.getHeight());
+        System.out.println("SCREENBOUNDS = "+Screen.getPrimary().getBounds());
+        System.out.println("SCREEN = "+Screen.getPrimary());
+        System.out.println("minwidt = "+gameBounds.getWidth()+", minheight = "+gameBounds.getHeight());
         primaryStage.show();
     }
 
